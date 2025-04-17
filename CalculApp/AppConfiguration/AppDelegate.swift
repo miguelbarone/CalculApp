@@ -15,11 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let window = UIWindow()
-        let navigationController = UINavigationController(rootViewController: CalculatorViewController())
+        let navigationController = UINavigationController()
 
         let tintColor: UIColor = navigationController.traitCollection.userInterfaceStyle == .dark ? .white : .black
         navigationController.navigationBar.tintColor = tintColor
         navigationController.navigationBar.prefersLargeTitles = true
+
+        CalculatorCoordinator(navigationController: navigationController).start()
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

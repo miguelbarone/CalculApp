@@ -16,6 +16,10 @@
 		B1663EC92DB0517700D7B38E /* CalculAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663EC82DB0517700D7B38E /* CalculAppUITests.swift */; };
 		B1663ECB2DB0517700D7B38E /* CalculAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663ECA2DB0517700D7B38E /* CalculAppUITestsLaunchTests.swift */; };
 		B1663EE32DB142AB00D7B38E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663EE22DB142A700D7B38E /* HistoryViewController.swift */; };
+		B1994E4C2DB1477E00A73BD7 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1994E4B2DB1477B00A73BD7 /* CalculatorViewModel.swift */; };
+		B1994E4E2DB1478100A73BD7 /* CalculatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1994E4D2DB1478100A73BD7 /* CalculatorCoordinator.swift */; };
+		B1994E502DB1499800A73BD7 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1994E4F2DB1499500A73BD7 /* HistoryViewModel.swift */; };
+		B1994E522DB1499F00A73BD7 /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1994E512DB1499A00A73BD7 /* HistoryCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		B1663EC82DB0517700D7B38E /* CalculAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculAppUITests.swift; sourceTree = "<group>"; };
 		B1663ECA2DB0517700D7B38E /* CalculAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1663EE22DB142A700D7B38E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B1994E4B2DB1477B00A73BD7 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		B1994E4D2DB1478100A73BD7 /* CalculatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinator.swift; sourceTree = "<group>"; };
+		B1994E4F2DB1499500A73BD7 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		B1994E512DB1499A00A73BD7 /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +162,8 @@
 		B1663EE02DB1428300D7B38E /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				B1994E4D2DB1478100A73BD7 /* CalculatorCoordinator.swift */,
+				B1994E4B2DB1477B00A73BD7 /* CalculatorViewModel.swift */,
 				B1663EA82DB0517500D7B38E /* CalculatorViewController.swift */,
 			);
 			path = Calculator;
@@ -162,6 +172,8 @@
 		B1663EE12DB1428E00D7B38E /* History */ = {
 			isa = PBXGroup;
 			children = (
+				B1994E512DB1499A00A73BD7 /* HistoryCoordinator.swift */,
+				B1994E4F2DB1499500A73BD7 /* HistoryViewModel.swift */,
 				B1663EE22DB142A700D7B38E /* HistoryViewController.swift */,
 			);
 			path = History;
@@ -305,9 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1663EA92DB0517500D7B38E /* CalculatorViewController.swift in Sources */,
+				B1994E522DB1499F00A73BD7 /* HistoryCoordinator.swift in Sources */,
 				B1663EA52DB0517500D7B38E /* AppDelegate.swift in Sources */,
 				B1663EAF2DB0517500D7B38E /* CalculApp.xcdatamodeld in Sources */,
+				B1994E4E2DB1478100A73BD7 /* CalculatorCoordinator.swift in Sources */,
 				B1663EE32DB142AB00D7B38E /* HistoryViewController.swift in Sources */,
+				B1994E4C2DB1477E00A73BD7 /* CalculatorViewModel.swift in Sources */,
+				B1994E502DB1499800A73BD7 /* HistoryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
