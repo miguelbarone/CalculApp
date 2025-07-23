@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1663EA52DB0517500D7B38E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663EA42DB0517500D7B38E /* AppDelegate.swift */; };
-		B1663EA92DB0517500D7B38E /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663EA82DB0517500D7B38E /* CalculatorViewController.swift */; };
+		B121FAA52E2041110017D977 /* OperationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B121FAA42E20410F0017D977 /* OperationView.swift */; };
+		B121FAA72E20411A0017D977 /* OperationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B121FAA62E2041180017D977 /* OperationModel.swift */; };
+		B1663EA52DB0517500D7B38E /* CalculApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663EA42DB0517500D7B38E /* CalculApp.swift */; };
 		B1663EAF2DB0517500D7B38E /* CalculApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1663EAD2DB0517500D7B38E /* CalculApp.xcdatamodeld */; };
 		B1663EB12DB0517600D7B38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1663EB02DB0517600D7B38E /* Assets.xcassets */; };
 		B1663EB42DB0517600D7B38E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1663EB22DB0517600D7B38E /* LaunchScreen.storyboard */; };
 		B1663EBF2DB0517700D7B38E /* CalculAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663EBE2DB0517700D7B38E /* CalculAppTests.swift */; };
 		B1663EC92DB0517700D7B38E /* CalculAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663EC82DB0517700D7B38E /* CalculAppUITests.swift */; };
 		B1663ECB2DB0517700D7B38E /* CalculAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663ECA2DB0517700D7B38E /* CalculAppUITestsLaunchTests.swift */; };
-		B1663EE32DB142AB00D7B38E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1663EE22DB142A700D7B38E /* HistoryViewController.swift */; };
+		B167307D2DC3D5A3004E36B4 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167307C2DC3D5A3004E36B4 /* CalculatorView.swift */; };
+		B167307F2DC3D665004E36B4 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B167307E2DC3D661004E36B4 /* HistoryView.swift */; };
+		B16730812DC3D687004E36B4 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16730802DC3D684004E36B4 /* PersistenceController.swift */; };
 		B1994E4C2DB1477E00A73BD7 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1994E4B2DB1477B00A73BD7 /* CalculatorViewModel.swift */; };
-		B1994E4E2DB1478100A73BD7 /* CalculatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1994E4D2DB1478100A73BD7 /* CalculatorCoordinator.swift */; };
 		B1994E502DB1499800A73BD7 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1994E4F2DB1499500A73BD7 /* HistoryViewModel.swift */; };
-		B1994E522DB1499F00A73BD7 /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1994E512DB1499A00A73BD7 /* HistoryCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B121FAA42E20410F0017D977 /* OperationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationView.swift; sourceTree = "<group>"; };
+		B121FAA62E2041180017D977 /* OperationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationModel.swift; sourceTree = "<group>"; };
 		B1663EA12DB0517500D7B38E /* CalculApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1663EA42DB0517500D7B38E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1663EA82DB0517500D7B38E /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		B1663EA42DB0517500D7B38E /* CalculApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculApp.swift; sourceTree = "<group>"; };
 		B1663EAE2DB0517500D7B38E /* CalculApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalculApp.xcdatamodel; sourceTree = "<group>"; };
 		B1663EB02DB0517600D7B38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1663EB32DB0517600D7B38E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,11 +54,11 @@
 		B1663EC42DB0517700D7B38E /* CalculAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1663EC82DB0517700D7B38E /* CalculAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculAppUITests.swift; sourceTree = "<group>"; };
 		B1663ECA2DB0517700D7B38E /* CalculAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B1663EE22DB142A700D7B38E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B167307C2DC3D5A3004E36B4 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		B167307E2DC3D661004E36B4 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B16730802DC3D684004E36B4 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		B1994E4B2DB1477B00A73BD7 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
-		B1994E4D2DB1478100A73BD7 /* CalculatorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorCoordinator.swift; sourceTree = "<group>"; };
 		B1994E4F2DB1499500A73BD7 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
-		B1994E512DB1499A00A73BD7 /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B121FAA22E2041040017D977 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B121FAA32E2041070017D977 /* OperationView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B121FAA32E2041070017D977 /* OperationView */ = {
+			isa = PBXGroup;
+			children = (
+				B121FAA62E2041180017D977 /* OperationModel.swift */,
+				B121FAA42E20410F0017D977 /* OperationView.swift */,
+			);
+			path = OperationView;
+			sourceTree = "<group>";
+		};
 		B1663E982DB0517500D7B38E = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +126,7 @@
 		B1663EDA2DB0521900D7B38E /* CalculApp */ = {
 			isa = PBXGroup;
 			children = (
+				B1994E532DB1500800A73BD7 /* CoreData */,
 				B1663EDF2DB1427D00D7B38E /* Scenes */,
 				B1663EDE2DB1427200D7B38E /* Resources */,
 				B1663EDD2DB1423100D7B38E /* AppConfiguration */,
@@ -134,7 +154,7 @@
 		B1663EDD2DB1423100D7B38E /* AppConfiguration */ = {
 			isa = PBXGroup;
 			children = (
-				B1663EA42DB0517500D7B38E /* AppDelegate.swift */,
+				B1663EA42DB0517500D7B38E /* CalculApp.swift */,
 				B1663EB52DB0517600D7B38E /* Info.plist */,
 				B1663EB22DB0517600D7B38E /* LaunchScreen.storyboard */,
 			);
@@ -144,7 +164,6 @@
 		B1663EDE2DB1427200D7B38E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B1663EAD2DB0517500D7B38E /* CalculApp.xcdatamodeld */,
 				B1663EB02DB0517600D7B38E /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -162,9 +181,9 @@
 		B1663EE02DB1428300D7B38E /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				B1994E4D2DB1478100A73BD7 /* CalculatorCoordinator.swift */,
+				B121FAA22E2041040017D977 /* Views */,
 				B1994E4B2DB1477B00A73BD7 /* CalculatorViewModel.swift */,
-				B1663EA82DB0517500D7B38E /* CalculatorViewController.swift */,
+				B167307C2DC3D5A3004E36B4 /* CalculatorView.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -172,11 +191,19 @@
 		B1663EE12DB1428E00D7B38E /* History */ = {
 			isa = PBXGroup;
 			children = (
-				B1994E512DB1499A00A73BD7 /* HistoryCoordinator.swift */,
+				B167307E2DC3D661004E36B4 /* HistoryView.swift */,
 				B1994E4F2DB1499500A73BD7 /* HistoryViewModel.swift */,
-				B1663EE22DB142A700D7B38E /* HistoryViewController.swift */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		B1994E532DB1500800A73BD7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B16730802DC3D684004E36B4 /* PersistenceController.swift */,
+				B1663EAD2DB0517500D7B38E /* CalculApp.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,13 +343,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1663EA92DB0517500D7B38E /* CalculatorViewController.swift in Sources */,
-				B1994E522DB1499F00A73BD7 /* HistoryCoordinator.swift in Sources */,
-				B1663EA52DB0517500D7B38E /* AppDelegate.swift in Sources */,
+				B1663EA52DB0517500D7B38E /* CalculApp.swift in Sources */,
+				B16730812DC3D687004E36B4 /* PersistenceController.swift in Sources */,
+				B121FAA52E2041110017D977 /* OperationView.swift in Sources */,
+				B167307F2DC3D665004E36B4 /* HistoryView.swift in Sources */,
 				B1663EAF2DB0517500D7B38E /* CalculApp.xcdatamodeld in Sources */,
-				B1994E4E2DB1478100A73BD7 /* CalculatorCoordinator.swift in Sources */,
-				B1663EE32DB142AB00D7B38E /* HistoryViewController.swift in Sources */,
 				B1994E4C2DB1477E00A73BD7 /* CalculatorViewModel.swift in Sources */,
+				B121FAA72E20411A0017D977 /* OperationModel.swift in Sources */,
+				B167307D2DC3D5A3004E36B4 /* CalculatorView.swift in Sources */,
 				B1994E502DB1499800A73BD7 /* HistoryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
